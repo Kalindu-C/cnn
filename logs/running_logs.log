@@ -145,3 +145,88 @@ Traceback (most recent call last):
     return np.array(x)
            ^^^^^^^^^^^
 NotImplementedError: numpy() is only available when eager execution is enabled.
+[2025-08-06 18:57:21,996: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-08-06 18:57:21,999: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-08-06 18:57:22,002: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-08-06 18:57:22,003: INFO: common: created directory at: artifacts]
+[2025-08-06 18:57:22,004: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-08-06 18:57:22,004: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1z0mreUtRmR-P-magILsDR3T7M6IkGXtY/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-08-06 18:59:38,918: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1z0mreUtRmR-P-magILsDR3T7M6IkGXtY/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-08-06 18:59:39,795: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-08-06 18:59:39,795: INFO: main: *******************]
+[2025-08-06 18:59:39,796: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2025-08-06 18:59:39,801: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-08-06 18:59:39,803: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-08-06 18:59:39,804: INFO: common: created directory at: artifacts]
+[2025-08-06 18:59:39,805: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-08-06 18:59:40,751: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-08-06 18:59:41,004: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-08-06 18:59:41,136: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2025-08-06 18:59:41,146: INFO: main: *******************]
+[2025-08-06 18:59:41,147: INFO: main: >>>>>> stage Training started <<<<<<]
+[2025-08-06 18:59:41,150: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-08-06 18:59:41,153: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-08-06 18:59:41,154: INFO: common: created directory at: artifacts]
+[2025-08-06 18:59:41,155: INFO: common: created directory at: artifacts\training]
+[2025-08-06 18:59:41,425: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-08-06 18:59:43,436: ERROR: main: numpy() is only available when eager execution is enabled.]
+Traceback (most recent call last):
+  File "D:\MyProjects\deep_learning\cnn\main.py", line 36, in <module>
+    model_trainer.main()
+  File "D:\MyProjects\deep_learning\cnn\src\cnn\pipeline\stage_03_model_trainer.py", line 21, in main
+    training.train()
+  File "D:\MyProjects\deep_learning\cnn\src\cnn\components\model_trainer.py", line 77, in train
+    self.model.fit(
+  File "D:\MyProjects\deep_learning\cnn\.venv\Lib\site-packages\keras\src\utils\traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "D:\MyProjects\deep_learning\cnn\.venv\Lib\site-packages\keras\src\backend\tensorflow\core.py", line 171, in convert_to_numpy
+    return np.array(x)
+           ^^^^^^^^^^^
+NotImplementedError: numpy() is only available when eager execution is enabled.
+[2025-08-06 19:41:09,627: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-08-06 19:41:09,632: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-08-06 19:41:09,635: INFO: common: created directory at: artifacts]
+[2025-08-06 19:41:09,637: INFO: common: created directory at: artifacts\training]
+[2025-08-06 19:41:10,130: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-08-06 19:42:26,248: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-08-06 19:42:26,252: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-08-06 19:42:26,255: INFO: common: created directory at: artifacts]
+[2025-08-06 19:42:26,257: INFO: common: created directory at: artifacts\training]
+[2025-08-06 19:42:26,620: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-08-06 19:44:14,346: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-08-06 19:53:33,956: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-08-06 19:53:33,957: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-08-06 19:53:33,957: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-08-06 19:53:33,957: INFO: common: created directory at: artifacts]
+[2025-08-06 19:53:33,957: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-08-06 19:53:33,957: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1z0mreUtRmR-P-magILsDR3T7M6IkGXtY/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-08-06 19:57:48,290: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1z0mreUtRmR-P-magILsDR3T7M6IkGXtY/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-08-06 19:57:49,271: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-08-06 19:57:49,272: INFO: main: *******************]
+[2025-08-06 19:57:49,272: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2025-08-06 19:57:49,276: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-08-06 19:57:49,284: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-08-06 19:57:49,285: INFO: common: created directory at: artifacts]
+[2025-08-06 19:57:49,286: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-08-06 19:57:50,151: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-08-06 19:57:50,441: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-08-06 19:57:50,601: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2025-08-06 19:57:50,603: INFO: main: *******************]
+[2025-08-06 19:57:50,603: INFO: main: >>>>>> stage Training started <<<<<<]
+[2025-08-06 19:57:50,605: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-08-06 19:57:50,608: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-08-06 19:57:50,609: INFO: common: created directory at: artifacts]
+[2025-08-06 19:57:50,613: INFO: common: created directory at: artifacts\training]
+[2025-08-06 19:57:50,975: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-08-06 19:59:52,165: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-08-06 19:59:52,378: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]

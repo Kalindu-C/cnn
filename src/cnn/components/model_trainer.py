@@ -18,6 +18,13 @@ class Training:
             self.config.updated_base_model_path
         )
 
+        # Recompile the model with a fresh optimizer
+        self.model.compile(
+            optimizer=tf.keras.optimizers.Adam(self.config.params_learning_rate),
+            loss='categorical_crossentropy',  # or 'binary_crossentropy' for binary classification
+            metrics=['accuracy']
+        )
+
     def train_valid_generator(self):
 
         datagenerator_kwargs = dict(

@@ -30,3 +30,10 @@ error occured while execuitng training section which is exaclty here
         )
 
 initially there was no compile method and i added it now it's works
+
+
+*** dagshub 
+
+export MLFLOW_TRACKING_URI=https://dagshub.com/Kalindu-C/cnn.mlflow
+export MLFLOW_TRACKING_USERNAME=Kalindu-C
+export MLFLOW_TRACKING_PASSWORD=7974089bfe546160f38456c32264b8dda6073620

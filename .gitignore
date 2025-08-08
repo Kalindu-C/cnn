@@ -11,3 +11,7 @@ wheels/
 
 artifacts/*
 .vscode/
+
+.dvc/
+dvc.lock
+scores.json
